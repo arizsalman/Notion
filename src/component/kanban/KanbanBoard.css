@@ -1,0 +1,105 @@
+.kanban-board {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.kanban-columns {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.kanban-column {
+  min-width: 200px;
+  flex: 0 0 200px;
+  background: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.kanban-column-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.kanban-droppable {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-height: 40px;
+}
+
+.kanban-card,
+.kanban-new-page-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e3e6ea;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  color: #424242;
+  display: flex;
+  align-items: center;
+  transition: border 0.2s, background 0.2s;
+}
+
+.kanban-card:hover {
+  background: #f6f6f7;
+  border-color: #d1d5db;
+}
+
+.kanban-card-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.kanban-new-page-card {
+  background: #fafbfc;
+  border: 1.2px dashed #e3e6ea;
+  font-style: italic;
+  color: #b1b5bb;
+}
+
+.kanban-new-page {
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #b1b5bb;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+}
+
+.kanban-new-page:focus,
+.kanban-new-page:active {
+  outline: none;
+  background: transparent;
+}
+
+@media (max-width: 900px) {
+  .kanban-columns {
+    gap: 0.7rem;
+  }
+  .kanban-column {
+    min-width: 180px;
+    flex: 0 0 180px;
+  }
+}

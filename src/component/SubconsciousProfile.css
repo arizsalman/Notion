@@ -1,0 +1,54 @@
+.subconscious-board {
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.subconscious-board h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.board-columns {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+}
+
+.board-column {
+  min-width: 200px;
+  flex: 0 0 200px;
+}
+
+.board-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1rem 0.5rem;
+}
+
+.card-item {
+  background: #f5f6fa;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.new-page {
+  margin-top: 0.5rem;
+  color: #aaa;
+  font-size: 0.95rem;
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  padding: 0.4rem 0.7rem;
+  text-align: center;
+  cursor: pointer;
+  background: #fafbfc;
+  transition: background 0.2s;
+}
+
+.new-page:hover {
+  background: #f0f1f3;
+} 

@@ -1,0 +1,727 @@
+.notion-modal .p-dialog-content {
+  padding: 0;
+  background: #fff;
+}
+
+.modal-content {
+  padding: 24px;
+}
+
+.modal-header {
+  margin-bottom: 24px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #6b7280;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.info-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  min-width: 60px;
+}
+
+.status-dropdown {
+  min-width: 120px;
+}
+
+.status-dropdown .p-dropdown-label {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.type-field {
+  flex: 1;
+}
+
+.type-display {
+  display: inline-block;
+  padding: 4px 8px;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.type-display:hover {
+  background-color: #f3f4f6;
+}
+
+.type-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.title-input,
+.notes-input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.title-input:focus,
+.notes-input:focus,
+.type-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.subtask-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.subtask-input-group .p-inputtext {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.subtask-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subtask-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.subtask-text {
+  flex: 1;
+  font-size: 14px;
+  color: #374151;
+}
+
+.subtask-done {
+  flex: 1;
+  font-size: 14px;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* PrimeReact component overrides */
+.notion-modal .p-dialog-header {
+  display: none;
+}
+
+.notion-modal .p-dialog {
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.notion-modal .p-dropdown-panel {
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+} 
+
+.notion-sidebar .p-sidebar {
+  border-radius: 0;
+  box-shadow: -2px 0 16px rgba(0,0,0,0.07);
+  top: 0;
+  right: 0;
+  height: 100vh;
+  max-width: 540px;
+  min-width: 340px;
+}
+
+.notion-sidebar .p-sidebar-content {
+  padding: 0;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 0 0 0;
+}
+
+.sidebar-header {
+  padding: 32px 32px 0 32px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.sidebar-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+  margin: 0 0 8px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.sidebar-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 32px 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.info-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  min-width: 60px;
+}
+
+.status-dropdown {
+  min-width: 120px;
+}
+
+.status-dropdown .p-dropdown-label {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.type-field {
+  flex: 1;
+}
+
+.type-display {
+  display: inline-block;
+  padding: 4px 8px;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.type-display:hover {
+  background-color: #f3f4f6;
+}
+
+.type-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.title-input,
+.notes-input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.title-input:focus,
+.notes-input:focus,
+.type-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.subtask-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.subtask-input-group .p-inputtext {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.subtask-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subtask-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.subtask-text {
+  flex: 1;
+  font-size: 14px;
+  color: #374151;
+}
+
+.subtask-done {
+  flex: 1;
+  font-size: 14px;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.sidebar-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 16px 32px;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+/* Button styling fixes */
+.sidebar-footer .p-button {
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sidebar-footer .p-button.p-button-danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.sidebar-footer .p-button.p-button-danger:hover {
+  background: #b91c1c;
+}
+
+.sidebar-footer .p-button:not(.p-button-danger) {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.sidebar-footer .p-button:not(.p-button-danger):hover {
+  background: #2563eb;
+}
+
+/* Sub-task buttons */
+.subtask-item .p-button {
+  color: #6b7280;
+  background: transparent;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subtask-item .p-button:hover {
+  background: #f3f4f6;
+}
+
+.subtask-item .p-button.p-button-danger {
+  color: #dc2626;
+}
+
+.subtask-item .p-button.p-button-danger:hover {
+  background: #fef2f2;
+}
+
+/* Add sub-task button */
+.subtask-input-group .p-button {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subtask-input-group .p-button:hover {
+  background: #2563eb;
+}
+
+/* ConfirmDialog styling fixes */
+.p-confirm-dialog .p-dialog-content {
+  padding: 24px;
+}
+
+.p-confirm-dialog .p-dialog-header {
+  padding: 16px 24px 0 24px;
+}
+
+.p-confirm-dialog .p-dialog-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.p-confirm-dialog .p-dialog-message {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 16px 0;
+}
+
+.p-confirm-dialog .p-dialog-footer {
+  padding: 16px 24px 24px 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.p-confirm-dialog .p-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 80px;
+}
+
+.p-confirm-dialog .p-button.p-confirm-dialog-reject {
+  background: #6b7280;
+  color: #fff;
+}
+
+.p-confirm-dialog .p-button.p-confirm-dialog-reject:hover {
+  background: #4b5563;
+}
+
+.p-confirm-dialog .p-button.p-confirm-dialog-accept {
+  background: #dc2626;
+  color: #fff;
+}
+
+.p-confirm-dialog .p-button.p-confirm-dialog-accept:hover {
+  background: #b91c1c;
+}
+
+/* Hide the default modal header */
+.notion-sidebar .p-sidebar-header {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .notion-sidebar .p-sidebar {
+    min-width: 0;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+  .sidebar-header, .sidebar-body, .sidebar-footer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+} 
+
+/* Notion-style Kanban UI/UX */
+
+.kanban-board {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  scrollbar-gutter: stable both-edges;
+}
+.kanban-board h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+.kanban-columns {
+  display: flex;
+  gap: 1.5rem;
+  min-width: 120vw; /* Force overflow for scrollbar */
+  width: max-content;
+  overflow-x: auto;
+  padding: 0;
+  min-height: 100vh;
+}
+.kanban-column {
+  min-width: 320px;    /* Match or slightly exceed your card min-width */
+  flex: 0 0 320px;
+  background: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.kanban-column-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+  margin-left: 0.3rem;
+}
+.kanban-droppable {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;   /* Increase this value for more space between boxes */
+  min-height: 40px;
+}
+.kanban-card,
+.kanban-new-page-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e3e6ea;
+  /* Wider and shorter: */
+  padding: 0.18rem 1.6rem;      /* Less vertical, more horizontal padding */
+  font-size: 0.95rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  transition: border 0.2s, background 0.2s;
+  box-shadow: none;
+  font-weight: 400;
+  min-width: 300px;             /* Wider cards */
+  min-height: 22px;             /* Shorter cards */
+}
+.kanban-card:hover {
+  background: #f6f6f7;
+  border-color: #d1d5db;
+}
+.kanban-card-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #222;
+}
+.kanban-new-page-card {
+  background: #fafbfc;
+  border: 1.2px dashed #e3e6ea;
+  font-style: italic;
+  color: #b1b5bb;
+}
+.kanban-new-page {
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #b1b5bb;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+}
+.kanban-new-page:focus,
+.kanban-new-page:active {
+  outline: none;
+  background: transparent;
+} 
+
+.kanban-card input[type="text"] {
+  height: 2.2rem;           /* Increase this value for more height */
+  font-size: 1rem;
+  padding: 0 0.7rem;
+  border-radius: 6px;
+  border: 1.5px solid #bfc5ce;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+} 
+
+/* Always show horizontal scrollbar, fixed at the bottom */
+.kanban-board {
+  scrollbar-width: thin;
+  scrollbar-color: #e3e6ea #f7f8fa;
+}
+.kanban-board::-webkit-scrollbar {
+  height: 12px;
+  background: #f7f8fa;
+}
+.kanban-board::-webkit-scrollbar-thumb {
+  background: #e3e6ea;
+  border-radius: 6px;
+}
+.kanban-board::-webkit-scrollbar-thumb:hover {
+  background: #bfc5ce;
+}
+
+/* Ensure the scrollbar does not overlap content */
+.kanban-board {
+  padding-bottom: 12px; /* matches scrollbar height */
+}
+
+/* Remove any extra margin/padding from html/body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 700px) {
+  .kanban-board, .kanban-columns {
+    min-width: 100vw;
+    width: 100vw;
+  }
+} 
+
+.kanban-board {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: 0;
+  padding: 0 0 12px 0; /* bottom padding for scrollbar */
+  box-sizing: border-box;
+  z-index: 1;
+  overflow-x: auto;   /* horizontal scroll at bottom */
+  overflow-y: auto;   /* vertical scroll at right */
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Columns container stretches horizontally, not vertically */
+.kanban-columns {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;   /* only as wide as needed for columns */
+  min-height: 100vh;
+  /* Remove overflow-x/y here! */
+  padding: 0;
+}
+
+/* Optional: Style scrollbars for both axes */
+.kanban-board::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: #f7f8fa;
+}
+.kanban-board::-webkit-scrollbar-thumb {
+  background: #e3e6ea;
+  border-radius: 6px;
+}
+.kanban-board::-webkit-scrollbar-thumb:hover {
+  background: #bfc5ce;
+}
+
+/* Remove extra margin/padding from html/body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+} 
+
+.remember-scroll {
+  max-height: calc(100vh - 100px); /* Adjust 100px as per your header/title */
+  overflow-y: auto;
+  overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* Optional: Style the vertical scrollbar */
+.remember-scroll::-webkit-scrollbar {
+  width: 8px;
+  background: #f7f8fa;
+}
+.remember-scroll::-webkit-scrollbar-thumb {
+  background: #e3e6ea;
+  border-radius: 6px;
+}
+.remember-scroll::-webkit-scrollbar-thumb:hover {
+  background: #bfc5ce;
+} 
