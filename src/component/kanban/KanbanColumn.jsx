@@ -12,6 +12,7 @@ const KanbanColumn = ({
   onAddColRight,
   children,
   autoEdit,
+  dragHandleProps,
 }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editValue, setEditValue] = useState(col.name);
